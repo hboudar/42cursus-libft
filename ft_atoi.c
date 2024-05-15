@@ -12,16 +12,6 @@
 
 #include "libft.h"
 
-static int	ft_escape(char const *str)
-{
-	int	i;
-
-	i = 0;
-	while ((str[i] == 32 || (str[i] >= 9 && str[i] <= 13)) && str[i])
-		i++;
-	return (i);
-}
-
 int	ft_atoi(const char *str)
 {
 	unsigned long	n;
@@ -29,13 +19,11 @@ int	ft_atoi(const char *str)
 	int				sign;
 	int				i;
 
-	i = ft_escape(str);
-	sign = 1;
-	if (str[i] == '-' || str[i] == '+')
-		if (str[i++] == '-')
-			sign = -1;
-	n_ll = 0;
-	n = 0;
+	(1) && (i = 0, n_ll = 0, n = 0);
+	while ((str[i] == 32 || (str[i] >= 9 && str[i] <= 13)) && str[i])
+		i++;
+	sign = (str[i] == '-') * -1 + (str[i] == '+' || str[i] != '-');
+	i += (str[i] == '-' || str[i] == '+');
 	while ((str[i] >= '0' && str[i] <= '9') && str[i])
 	{
 		n = n * 10 + str[i] - 48;

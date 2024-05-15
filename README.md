@@ -115,5 +115,42 @@ Contributions are welcome! Please fork the repository and create a pull request 
 License
 This project is licensed under the MIT License.
 
+
+
+## Libft: Your Very First C Library 
+
+![][Badge Link]  Welcome to the Libft project! This repository contains a C library that includes a variety of general-purpose functions which are essential for many C programming tasks. This README will guide you through understanding, setting up, and contributing to the project.
+
+**Table of Contents**
+
+* [Introduction](#introduction)
+* [Common Instructions](#common-instructions)
+    * Language
+    * Standards
+    * Memory Management
+    * Makefile
+    * Testing (Highly Recommended)
+* [Mandatory Part](#mandatory-part)
+    * Technical Considerations
+    * Libc Functions
+    * Additional Functions
+* [Bonus Part](#bonus-part)
+* [Submission and Peer-Evaluation](#submission-and-peer-evaluation)
+* [Getting Started](#getting-started)
+    * Prerequisites
+    * Installation
+    * Usage
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+
+
+**Introduction**
+
+Libft is a project aimed at helping you understand and implement some of the most commonly used standard functions in C. By creating your own library, you'll gain a deeper understanding of how these functions work and be able to use them in future projects.
+
+... (Rest of your original README content) ...
+
+
 Contact
 For any questions or feedback, please contact [your-email@example.com].

@@ -1,156 +1,129 @@
-Libft: Your Very First Own Library
-Welcome to the Libft project! This repository contains a C library that includes a variety of general-purpose functions which are essential for many C programming tasks. This README will guide you through understanding, setting up, and contributing to the project.
+<h1 align="center">
+	42cursus' Libft
+</h1>
+<p align="center">
+	<b><i>Development repo for 42cursus' Libft project</i></b><br>
+	For further information about 42cursus and its projects, please refer to <a href="https://github.com/appinha/42cursus"><b>42cursus repo</b></a>.
+</p>
+<p align="center">
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/your-username/libft?color=blueviolet" />
+	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/your-username/libft?color=blueviolet" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/your-username/libft?color=blue" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/your-username/libft?color=blue" />
+	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/your-username/libft?color=brightgreen" />
+</p>
+<h3 align="center">
+	<a href="#%EF%B8%8F-about">About</a>
+	<span> · </span>
+	<a href="#-index">Index</a>
+	<span> · </span>
+	<a href="#%EF%B8%8F-usage">Usage</a>
+	<span> · </span>
+	<a href="#-testing">Testing</a>
+</h3>
+🗣️ About
+The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects.
 
-Table of Contents
-Introduction
-Common Instructions
-Mandatory Part
-Technical Considerations
-Libc Functions
-Additional Functions
-Bonus Part
-Submission and Peer-Evaluation
-Getting Started
-Prerequisites
-Installation
-Usage
-Contributing
-License
-Contact
-Introduction
-Libft is a project aimed at helping you understand and implement some of the most commonly used standard functions in C. By creating your own library, you'll gain a deeper understanding of how these functions work and be able to use them in future projects.
+For detailed information, refer to the subject of this project.
 
-Common Instructions
-Language: All code must be written in C.
-Standards: Adhere to the Norm. Any deviation will result in a zero grade.
-Memory Management: Properly free all heap-allocated memory. Memory leaks will not be tolerated.
-Makefile: Must include NAME, all, clean, fclean, and re rules.
-Testing: While not required, creating test programs is highly recommended to ensure your functions work correctly.
-Mandatory Part
-Technical Considerations
-Global variables are forbidden.
-Helper functions must be static.
-All files should be at the root of the repository.
-Use -Wall -Wextra -Werror flags for compilation.
-Use ar to create the library (using libtool is forbidden).
-Libc Functions
-You need to re-implement the following libc functions, each prefixed with ft_:
+🚀 TLDR: This project consists of coding basic C functions (see below), which are then compiled into a library for use in other projects of the cursus.
 
-ft_isalpha
-ft_isdigit
-ft_isalnum
-ft_isascii
-ft_isprint
-ft_strlen
-ft_memset
-ft_bzero
-ft_memcpy
-ft_memmove
-ft_strlcpy
-ft_strlcat
-ft_toupper
-ft_tolower
-ft_strchr
-ft_strrchr
-ft_strncmp
-ft_memchr
-ft_memcmp
-ft_strnstr
-ft_atoi
-ft_calloc
-ft_strdup
-Additional Functions
-Develop these additional functions to enhance your library:
+Functions from <ctype.h> library
+ft_isascii - Test for ASCII character.
+ft_isalnum - Alphanumeric character test.
+ft_isalpha - Alphabetic character test.
+ft_isdigit - Decimal-digit character test.
+ft_isprint - Printing character test (space character inclusive).
+ft_tolower - Upper case to lower case letter conversion.
+ft_toupper - Lower case to upper case letter conversion.
+Functions from <stdlib.h> library
+ft_atoi - Convert ASCII string to integer.
+ft_calloc - Memory allocation.
+Functions from <strings.h> library
+ft_bzero - Write zeroes to a byte string.
+ft_memset - Write a byte to a byte string.
+ft_memchr - Locate byte in byte string.
+ft_memcmp - Compare byte string.
+ft_memmove - Copy byte string.
+ft_memcpy - Copy memory area.
+Functions from <string.h> library
+ft_strlen - Find length of string.
+ft_strchr - Locate character in string (first occurrence).
+ft_strrchr - Locate character in string (last occurrence).
+ft_strnstr - Locate a substring in a string (size-bounded).
+ft_strncmp - Compare strings (size-bounded).
+ft_strdup - Save a copy of a string (with malloc).
+ft_strlcpy - Size-bounded string copying.
+ft_strlcat - Size-bounded string concatenation.
+Non-standard functions
+ft_substr - Extract substring from string.
+ft_strjoin - Concatenate two strings into a new string (with malloc).
+ft_strtrim - Trim beginning and end of string with specified characters.
+ft_split - Split string into an array of strings with specified delimiter.
+ft_itoa - Convert integer to ASCII string.
+ft_strmapi - Create new string from modifying string with specified function.
+ft_putchar_fd - Output a character to given file.
+ft_putstr_fd - Output string to given file.
+ft_putendl_fd - Output string to given file with newline.
+ft_putnbr_fd - Output integer to given file.
+Linked list functions
+ft_lstnew - Create new list.
+ft_lstsize - Count elements of a list.
+ft_lstlast - Find last element of list.
+ft_lstadd_back - Add new element at end of list.
+ft_lstadd_front - Add new element at beginning of list.
+ft_lstdelone - Delete element from list.
+ft_lstclear - Delete sequence of elements of list from a starting point.
+ft_lstiter - Apply function to content of all list's elements.
+ft_lstmap - Apply function to content of all list's elements into new list.
+Note: functions marked with * are bonus functions (not mandatory by the project's subject).
 
-ft_substr
-ft_strjoin
-ft_strtrim
-ft_split
-ft_itoa
-ft_strmapi
-ft_striteri
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putnbr_fd
-Bonus Part
-To further extend the library, implement functions for list manipulation using the t_list structure:
+📑 Index
+@root
 
-ft_lstnew
-ft_lstadd_front
-ft_lstsize
-ft_lstlast
-ft_lstadd_back
-ft_lstdelone
-ft_lstclear
-ft_lstiter
-ft_lstmap
-Note: The bonus part will only be evaluated if the mandatory part is perfect.
+📁 libft: Updated source code, refactored for use in other projects; includes additional functions for string manipulation, memory management, and linked list operations.
+📁 submX folder(s): Source code submitted to the cursus (including failed and succeeded submissions).
+📁 testing: My own testing program.
+🛠️ Usage
+Requirements
+The library is written in C language and thus needs the gcc compiler and some standard C libraries to run.
 
-Submission and Peer-Evaluation
-Submit your work to the assigned Git repository. Ensure all files are correctly named and located at the root of the repository. Only the work in the repository will be graded.
+Instructions
+1. Compiling the library
 
-Getting Started
-Prerequisites
-Ensure you have gcc and make installed on your system.
-Familiarity with C programming.
-Installation
-Clone the repository and navigate to the project directory:
+To compile the library, run:
 
 sh
 Copy code
-git clone https://github.com/your-username/libft.git
-cd libft
-Usage
-Compile the library using the Makefile:
+$ cd path/to/libft && make
+2. Using it in your code
+
+To use the library functions in your code, simply include its header:
+
+c
+Copy code
+#include "libft.h"
+and, when compiling your code, add the required flags:
 
 sh
 Copy code
-make
-Include the library in your projects by linking with libft.a.
+-lft -L path/to/libft.a -I path/to/libft.h
+📋 Testing
+1. First, configure the path to the libft folder in the Makefile (inside /testing/):
 
-Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code adheres to the project standards and includes tests where applicable.
+Makefile
+Copy code
+#############################
+## Path to Libft directory ##
+#############################
+DIR		= ../
+2. Then run:
 
-License
-This project is licensed under the MIT License.
-
-
-
-## Libft: Your Very First C Library 
-
-![][Badge Link]  Welcome to the Libft project! This repository contains a C library that includes a variety of general-purpose functions which are essential for many C programming tasks. This README will guide you through understanding, setting up, and contributing to the project.
-
-**Table of Contents**
-
-* [Introduction](#introduction)
-* [Common Instructions](#common-instructions)
-    * Language
-    * Standards
-    * Memory Management
-    * Makefile
-    * Testing (Highly Recommended)
-* [Mandatory Part](#mandatory-part)
-    * Technical Considerations
-    * Libc Functions
-    * Additional Functions
-* [Bonus Part](#bonus-part)
-* [Submission and Peer-Evaluation](#submission-and-peer-evaluation)
-* [Getting Started](#getting-started)
-    * Prerequisites
-    * Installation
-    * Usage
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-
-
-**Introduction**
-
-Libft is a project aimed at helping you understand and implement some of the most commonly used standard functions in C. By creating your own library, you'll gain a deeper understanding of how these functions work and be able to use them in future projects.
-
-... (Rest of your original README content) ...
-
-
-Contact
-For any questions or feedback, please contact [your-email@example.com].
+sh
+Copy code
+make t
+Third-party testers
+jtoty/Libftest
+alelievr/libft-unit-test
+Night-squad/libft-war-machine-v2019
+t0mm4rx/libftdestructor

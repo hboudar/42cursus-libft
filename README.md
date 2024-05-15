@@ -136,56 +136,6 @@ _Note: functions marked with * are bonus functions (not mandatory by the project
 * [**📁 libft:**](libft/) updated source code, refactored for use in other projects; includes [`get_next_line`](https://github.com/Cloneg7/git_next_line) and [`printf`](https://github.com/Cloneg7/printf) functions.
 * **📁 submX folder(s):** source code submitted to the cursus (including failed and succeeded submissions).
 
-## 🛠️ Usage
 
-### Requirements
-
-The library is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries** to run.
-
-### Instructions
-
-**1. Compiling the library**
-
-To compile the library, run:
-
-```shell
-$ cd path/to/libft && make
-```
-
-**2. Using it in your code**
-
-To use the library functions in your code, simply include its header:
-
-```C
-#include "libft.h"
-```
-
-and, when compiling your code, add the required flags:
-
-```shell
--lft -L path/to/libft.a -I path/to/libft.h
-```
-
-## 📋 Testing
-
-**1. First, configure the path to the libft folder in the Makefile (inside `/testing/`):**
-
-```Makefile
-#############################
-## Path to Libft directory ##
-#############################
-DIR		= ../
-```
-
-**2. Then run:**
-
-```shell
-make t
-```
-
-### Third-party testers
-
-* [jtoty/Libftest](https://github.com/jtoty/Libftest)
-* [alelievr/libft-unit-test](https://github.com/alelievr/libft-unit-test)
 * [Night-squad/libft-war-machine-v2019](https://github.com/Night-squad/libft-war-machine-v2019)
 * [t0mm4rx/libftdestructor](https://github.com/t0mm4rx/libftdestructor)

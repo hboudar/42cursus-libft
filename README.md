@@ -135,7 +135,3 @@ _Note: functions marked with * are bonus functions (not mandatory by the project
 
 * [**📁 libft:**](libft/) updated source code, refactored for use in other projects; includes [`get_next_line`](https://github.com/Cloneg7/git_next_line) and [`printf`](https://github.com/Cloneg7/printf) functions.
 * **📁 submX folder(s):** source code submitted to the cursus (including failed and succeeded submissions).
-
-
-* [Night-squad/libft-war-machine-v2019](https://github.com/Night-squad/libft-war-machine-v2019)
-* [t0mm4rx/libftdestructor](https://github.com/t0mm4rx/libftdestructor)

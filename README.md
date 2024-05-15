@@ -133,7 +133,7 @@ _Note: functions marked with * are bonus functions (not mandatory by the project
 
 `@root`
 
-* [**📁 libft:**](libft/) updated source code, refactored for use in other projects; includes [`get_next_line`]([https://github.com/appinha/42cursus-01-get_next_line](https://github.com/Cloneg7/git_next_line)) and [`printf`](https://github.com/appinha/42cursus-01-ft_printf) functions.
+* [**📁 libft:**](libft/) updated source code, refactored for use in other projects; includes [`get_next_line`](https://github.com/Cloneg7/git_next_line) and [`printf`](https://github.com/appinha/42cursus-01-ft_printf) functions.
 * **📁 submX folder(s):** source code submitted to the cursus (including failed and succeeded submissions).
 * [**📁 testing:**](testing/) my own testing program.
 

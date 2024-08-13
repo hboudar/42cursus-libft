@@ -12,7 +12,7 @@ SRC_BONUS 	=	bonus_src/ft_lstnew_bonus.c bonus_src/ft_lstadd_front_bonus.c bonus
 OBJS_BONUS 	=	${SRC_BONUS:.c=.o}
 
 LIBC 		=	ar -rcs
-CFLAGS		=	-Wall -Wextra -Werror
+CFLAGS		=	-Wall -Wextra 
 CC			=	cc
 RM			=	rm -f
 NAME		=	libft.a

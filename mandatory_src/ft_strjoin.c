@@ -34,8 +34,8 @@ char	*ft_strjoin(char const *s1, char const *s2, int mode)
 	str[i + j] = '\0';
 	if (mode)
 	{
-		free(s1);
-		free(s2);
+		free((void *)s1);
+		free((void *)s2);
 	}
 	return (str);
 }
